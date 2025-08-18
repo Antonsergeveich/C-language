@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 #define N 3
-#define ONE
+//#define ONE
 //#define SIZE 
-//#define POINTER
+#define POINTER
 
 int main(void){
 #ifdef ONE
@@ -40,7 +40,7 @@ for(int i = 0; i < 3; i++){
     char (*p_ar)[3] = game_pole; //объявление указателя на двумерный массив
     char *ptr[3];                //массив из трёх указателей
     char x = p_ar[1][2];         //хранит второй элемент из массива game_pole
-
+    printf("%d ",(*(p_ar + 1))[3]);
     #endif
     return 0;
 }
