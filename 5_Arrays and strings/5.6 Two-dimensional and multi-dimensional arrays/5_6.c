@@ -1,14 +1,29 @@
 #include <stdio.h>
 
 #define N 3
-//#define ONE
+#define ONE
 //#define SIZE 
 //#define POINTER
 
 int main(void){
 #ifdef ONE
 char pole_2[N * N];
-char x = pole_2[i * N + j]; //двумерный массив в строку
+//char x = pole_2[i * N + j]; //двумерный массив в строку
+char game_pole[3][3] = {1, 2, 3, 4};
+for(int i = 0; i < 3; i++){
+    for(int j = 0; j < 3; j++){
+        printf("%d ",game_pole[i][j]);
+    }
+    printf("\n");
+}
+printf("\n");
+char game_pole2[3][3] = {{1, 2}, {3, 4}};
+for(int i = 0; i < 3; i++){
+    for(int j = 0; j < 3; j++){
+        printf("%d ",game_pole2[i][j]);
+    }
+    printf("\n");
+}
 #endif
 #ifdef SIZE
     int game_pole[5][3];
@@ -26,6 +41,6 @@ char x = pole_2[i * N + j]; //двумерный массив в строку
     char *ptr[3];                //массив из трёх указателей
     char x = p_ar[1][2];         //хранит второй элемент из массива game_pole
 
+    #endif
     return 0;
-#endif
 }
