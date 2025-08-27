@@ -61,14 +61,16 @@ int main(void){
     char str_cat[100] = "Anton ";
     char str[15] = "Pershin ";
     strcat(str_cat, "Sergeevich");
-    printf("%s", str_cat);
-    printf("\n");
+        //printf("\n");
 
-    size_t max_add = sizeof(str) - strlen(str) - 1;
-    strncat(str, str_cat, max_add);
+    size_t max_add = sizeof(str) - strlen(str) - 1; /*максимальное количество символов которое 
+    можно добавить в массив str*/
+    printf("max_add = %zu\n",max_add);
+    printf("strlen(str) = %zu\n", strlen(str));
+    printf("sizeof(str) = %lu\n", sizeof(str));
+    printf("%s\n",strncat(str, str_cat, max_add));
     str[sizeof(str) - 1] = '\0';
-
-    printf("%s",str);
+    //printf("%s",str);
 
     #endif
     return 0;
