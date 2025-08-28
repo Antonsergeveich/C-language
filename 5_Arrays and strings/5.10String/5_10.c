@@ -33,7 +33,14 @@ int main(void){
         else puts("Strings are not equal!");
     #endif
     #ifdef THREE
-        
+        const char* strings[] = {
+            "Ship","Shopping","Shematic","Super","Car","Sherif"
+        };
+        for(int i = 0; i < sizeof(strings)/sizeof(*strings); ++i){
+            if(strncmp(strings[i],"Sh",2) == 0){ //сравниваем первые два символа "Sh"
+                puts(strings[i]);
+            }
+        }
     #endif
     return 0;
 }
