@@ -3,7 +3,9 @@
 
 //#define ONE
 //#define TWO
-#define THREE
+//#define THREE
+//#define FOUR
+#define FIVE
 
 int main(void){
     char s1[12] = "Hello";
@@ -41,6 +43,34 @@ int main(void){
                 puts(strings[i]);
             }
         }
+    #endif
+    #ifdef FOUR
+        char str[] = "Abracadabra";
+        char *ptr1 = strchr(str, 'a'); //ищет букву а сначала строки
+
+        printf("str = %p\nptr1 = %p\n", str, ptr1);
+            if(ptr1 != 0)
+                printf("*ptr1 = %c\n", *ptr1);
+
+        char *ptr2 = strrchr(str, 'a'); //ищет букву а с конца строки
+        printf("str = %p\nptr2 = %p\n", str, ptr2);
+            if(ptr2 != 0)
+                printf("*ptr2 = %c\n", *ptr2);           
+    #endif
+    #ifdef FIVE
+    //    char str[] = "Abracadabra";
+    //     char *ptr1 = strstr(str, "ra"); //
+
+    //     printf("str = %p\nptr1 = %p\n", str, ptr1);
+    //         if(ptr1 != 0)
+    //             printf("*ptr1 = %s\n", ptr1);
+
+        char pass[] = "dffg90!#$$A";               
+
+        char *ptr2 = strpbrk(pass, "@!#$^&?"); //содержится хотябы один символ вот этой приведённой подстроке
+        printf("pass = %p\nptr2 = %p\n", pass, ptr2);
+            if(ptr2 != 0)
+                printf("*ptr2 = %s\n", ptr2); 
     #endif
     return 0;
 }
