@@ -1,12 +1,27 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
 #define TOTAL 10
+
+int fact(int n);
+int pow_n(int num, int pow);
+int get_volume(int h, int w, int d);
 
 int main(void) {
 
-	char str[TOTAL][50], * p_sort[TOTAL];
+
+	//printf("%d", fact(4));
+	//printf("%d", pow_n(2, 4));
+	/*int h, w, d;
+	scanf("%d %d %d", &h, &w, &d);
+	int res = get_volume(h, w, d);
+	printf("%d", res);*/
+
+
+
+
+	/*char str[TOTAL][50], * p_sort[TOTAL];
 	int count = 0;
 	while (count < TOTAL && fgets(str[count], sizeof(str[0]) - 1, stdin))
 	{
@@ -45,7 +60,7 @@ int main(void) {
 			printf(" ");
 	}
 
-	printf("\n");
+	printf("\n");*/
 
 	return 0;
 }
