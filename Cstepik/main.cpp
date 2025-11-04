@@ -6,9 +6,9 @@
 
 int main(void) {
 
-	char str[TOTAL][50], *p_sort[TOTAL];
+	char str[TOTAL][50], * p_sort[TOTAL];
 	int count = 0;
-	while (count < TOTAL && fgets(str[count], sizeof(str[0])-1, stdin))
+	while (count < TOTAL && fgets(str[count], sizeof(str[0]) - 1, stdin))
 	{
 		char* ptr_n = strrchr(str[count], '\n');
 		if (ptr_n != NULL)
@@ -21,11 +21,7 @@ int main(void) {
 	}
 
 	for (int i = 0; i < count - 1; i++) {
-		p_sort[i] = str[i];
-	}
-
-	for (int i = 0; i < count - 1; i++) {
-		for (int j = 0; j < count - i - 1; i++) {
+		for (int j = 0; j < count - i - 1; j++) {
 			char* pos1 = strrchr(p_sort[j], ';');
 			char* pos2 = strrchr(p_sort[j + 1], ';');
 
@@ -39,6 +35,17 @@ int main(void) {
 			}
 		}
 	}
+
+	for (int i = 0; i < count; i++) {
+		char* colon = strchr(p_sort[i], ':');
+		for (char* p = p_sort[i]; p < colon; p++) {
+			printf("%c", *p);
+		}
+		if (i < count - 1)
+			printf(" ");
+	}
+
+	printf("\n");
 
 	return 0;
 }
