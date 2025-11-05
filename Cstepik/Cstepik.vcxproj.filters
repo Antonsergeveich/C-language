@@ -27,6 +27,24 @@
     <ClCompile Include="get_volume.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="is_triangle.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="get_mean2.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="get_sum2.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="is_even.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="is_range.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="get_length.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fact.h">
@@ -36,6 +54,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="get_volume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="is_triangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="get_mean2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="get_sum2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="is_even.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="is_range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="get_length.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

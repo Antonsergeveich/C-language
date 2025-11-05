@@ -7,6 +7,12 @@
 int fact(int n);
 int pow_n(int num, int pow);
 int get_volume(int h, int w, int d);
+int is_triangle(int a, int b, int c);
+double get_mean2(int a, int b);
+int get_sum2(int a, int b);
+int is_even(int n);
+int is_range(double x, double a, double b);
+double get_length(int a, int b);
 
 int main(void) {
 
@@ -17,9 +23,52 @@ int main(void) {
 	scanf("%d %d %d", &h, &w, &d);
 	int res = get_volume(h, w, d);
 	printf("%d", res);*/
+	/*char input[100];
+	fgets(input, sizeof(input), stdin);
+	int a, b, c;
+	if (sscanf(input, "%d %d %d", &a, &b, &c) == 3) {
+		printf("%d",is_triangle(a, b, c));
+	}
+	else puts("Нужно ввести три числа!");
+	is_triangle(a, b, c);*/
 
+	/*int a, b;
+	char arr[100];
+	fgets(arr, sizeof(arr), stdin);
+	if (sscanf(arr, "%d %d", &a, &b) == 2) {
+		printf("%.1f", get_mean2(a, b));
+	}
+	else puts("Нужно ввести два числа через пробел!");*/
 
+	/*int a, b, c;
+	char arr[100];
+	fgets(arr, sizeof(arr), stdin);
+	if (sscanf(arr, "%d %d %d", &a, &b, &c) == 3) {
+		printf("%d", get_sum2(get_sum2(a, b), c));
+	}
+	else
+	{
+		puts("Нужно ввести три целых числа!");
+	}*/
 
+	/*int x;
+	while (scanf("%d", &x) == 1) {
+		if (is_even(x)) printf("%d ", x);
+	}*/
+
+	/*double x;
+	while (scanf("%lf", &x) == 1) {
+		if (!is_range(x, -2.5, 3.5)) printf("%.1f ", x);
+	}*/
+
+	int a, b;
+	char arr[100];
+	fgets(arr, sizeof(arr), stdin);
+	if (sscanf(arr, "%d %d", &a, &b) == 2) {
+		printf("%.2lf", get_length(a, b));
+		return 0;
+	}
+	else puts("Please, enter two numbers!");
 
 	/*char str[TOTAL][50], * p_sort[TOTAL];
 	int count = 0;

@@ -128,13 +128,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="fact.cpp" />
+    <ClCompile Include="get_length.cpp" />
+    <ClCompile Include="get_mean2.cpp" />
+    <ClCompile Include="get_sum2.cpp" />
     <ClCompile Include="get_volume.cpp" />
+    <ClCompile Include="is_even.cpp" />
+    <ClCompile Include="is_range.cpp" />
+    <ClCompile Include="is_triangle.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pow_n.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fact.h" />
+    <ClInclude Include="get_length.h" />
+    <ClInclude Include="get_mean2.h" />
+    <ClInclude Include="get_sum2.h" />
     <ClInclude Include="get_volume.h" />
+    <ClInclude Include="is_even.h" />
+    <ClInclude Include="is_range.h" />
+    <ClInclude Include="is_triangle.h" />
     <ClInclude Include="pow_n.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
