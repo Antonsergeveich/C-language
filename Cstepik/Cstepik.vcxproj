@@ -127,9 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="calc_rect.cpp" />
+    <ClCompile Include="circle_len.cpp" />
     <ClCompile Include="fact.cpp" />
+    <ClCompile Include="get_geom.cpp" />
     <ClCompile Include="get_length.cpp" />
+    <ClCompile Include="get_max_get_min.cpp" />
     <ClCompile Include="get_mean2.cpp" />
+    <ClCompile Include="get_qm.cpp" />
     <ClCompile Include="get_sum2.cpp" />
     <ClCompile Include="get_volume.cpp" />
     <ClCompile Include="is_even.cpp" />
@@ -139,8 +144,13 @@
     <ClCompile Include="pow_n.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="calc_rect.h" />
+    <ClInclude Include="circle_len.h" />
     <ClInclude Include="fact.h" />
+    <ClInclude Include="get_geom.h" />
+    <ClInclude Include="get_gm.h" />
     <ClInclude Include="get_length.h" />
+    <ClInclude Include="get_max_get_min.h" />
     <ClInclude Include="get_mean2.h" />
     <ClInclude Include="get_sum2.h" />
     <ClInclude Include="get_volume.h" />

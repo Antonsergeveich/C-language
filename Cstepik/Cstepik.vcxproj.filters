@@ -45,6 +45,21 @@
     <ClCompile Include="get_length.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="get_qm.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="get_geom.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="calc_rect.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="get_max_get_min.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="circle_len.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fact.h">
@@ -72,6 +87,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="get_length.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="get_gm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="get_geom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="calc_rect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="get_max_get_min.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="circle_len.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

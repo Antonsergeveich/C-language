@@ -3,6 +3,9 @@
 #include <string.h>
 #include <stdlib.h>
 #define TOTAL 10
+#define PI 3.1415
+
+#include"get_geom.h"
 
 int fact(int n);
 int pow_n(int num, int pow);
@@ -13,6 +16,11 @@ int get_sum2(int a, int b);
 int is_even(int n);
 int is_range(double x, double a, double b);
 double get_length(int a, int b);
+double get_qm(double qm_1, int m, int x);
+int calc_rect(int, int, int);
+int get_max(int, int);
+int get_min(int, int);
+double circle_len(double);
 
 int main(void) {
 
@@ -61,14 +69,47 @@ int main(void) {
 		if (!is_range(x, -2.5, 3.5)) printf("%.1f ", x);
 	}*/
 
-	int a, b;
+	/*int a, b;
 	char arr[100];
 	fgets(arr, sizeof(arr), stdin);
 	if (sscanf(arr, "%d %d", &a, &b) == 2) {
 		printf("%.2lf", get_length(a, b));
 		return 0;
 	}
-	else puts("Please, enter two numbers!");
+	else puts("Please, enter two numbers!");*/
+
+	/*char arr[100];
+	int count = 0;
+	double Q = 0;
+
+	fgets(arr, sizeof(arr), stdin);
+	char* token = strtok(arr, " \n");
+	while (token != NULL && count < 100) {
+		int x;
+		sscanf(token, "%d", &x);
+		count++;
+
+		if (count == 1)Q = x;
+		else Q = get_qm(Q, count, x);
+
+		token = strtok(NULL, " \n");
+	}
+	printf("%.3lf\n", Q);*/
+
+
+	/*int a, b;
+	scanf("%d, %d", &a, &b);
+	printf("%.2lf", get_geom(a, b));*/
+
+	//int a, b, t;
+	//scanf("%d, %d, %d", &a, &b, &t);
+	//printf("%d", calc_rect(a, b, t));
+	//printf("%d", t == 1 ? get_max(a, b) : get_min(a, b));
+
+
+	double R;
+	scanf("%lf", &R);
+	printf("%.2lf", circle_len(R));
 
 	/*char str[TOTAL][50], * p_sort[TOTAL];
 	int count = 0;
